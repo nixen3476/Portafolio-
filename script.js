@@ -1,6 +1,6 @@
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", () => {
-        link.style.transform = "scale(1.2)";
-        setTimeout(() => link.style.transform = "scale(1)", 150);
-    });
+document.querySelectorAll("img").forEach(img => {
+  img.addEventListener("click", () => {
+    img.style.transform = "rotate(5deg) scale(1.1)";
+    setTimeout(() => img.style.transform = "none", 200);
+  });
 });
