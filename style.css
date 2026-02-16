@@ -1,0 +1,21 @@
+.boykisser {
+    position: fixed;
+    width: 120px;
+    bottom: 20px;
+    z-index: 5;
+    animation: float 3s ease-in-out infinite;
+}
+
+.left {
+    left: 10px;
+}
+
+.right {
+    right: 10px;
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
