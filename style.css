@@ -1,21 +1,59 @@
-.boykisser {
-    position: fixed;
-    width: 120px;
-    bottom: 20px;
-    z-index: 5;
-    animation: float 3s ease-in-out infinite;
+body {
+  font-family: "Courier New", monospace;
+  background: repeating-linear-gradient(
+    45deg,
+    #f5f5f5,
+    #f5f5f5 10px,
+    #eaeaea 10px,
+    #eaeaea 20px
+  );
+  margin: 0;
+  padding: 10px;
 }
 
-.left {
-    left: 10px;
+.container {
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  border: 4px double black;
+  padding: 15px;
+  box-shadow: 5px 5px 0 black;
 }
 
-.right {
-    right: 10px;
+h1, h2, h3 {
+  border: 3px solid black;
+  padding: 5px;
+  background: #dcdcdc;
+  box-shadow: 3px 3px 0 black;
 }
 
-@keyframes float {
-    0% { transform: translateY(0px); }
-    50% { transform: translateY(-15px); }
-    100% { transform: translateY(0px); }
+.section {
+  border: 3px dashed black;
+  margin: 15px 0;
+  padding: 10px;
+  background: #fafafa;
+}
+
+button, a {
+  border: 3px solid black;
+  background: #e0e0e0;
+  padding: 6px 10px;
+  text-decoration: none;
+  color: black;
+  box-shadow: 3px 3px 0 black;
+  display: inline-block;
+  margin: 5px;
+}
+
+button:hover, a:hover {
+  background: #cfcfcf;
+  transform: translate(2px,2px);
+  box-shadow: 1px 1px 0 black;
+}
+
+img {
+  max-width: 150px;
+  border: 3px solid black;
+  box-shadow: 3px 3px 0 black;
+  margin: 5px;
 }
